@@ -37,7 +37,7 @@
 
 <c:choose>
     <c:when test="${renderContext.editMode}">
-        If user's country equals ${countryToMatch.string} then display
+        If user's country code equals ${countryToMatch.string} then display
         <c:set var="facetParamVarName" value="N-${currentNode.name}"/>
         <%-- list mode --%>
         <c:choose>
@@ -60,7 +60,7 @@
     </c:when>
 
     <c:otherwise>
-        <c:if test="${resolvedCountry.name == countryToMatch.string}">
+        <c:if test="${resolvedCountry.code == countryToMatch.string}">
             <c:set var="facetParamVarName" value="N-${currentNode.name}"/>
             <%-- list mode --%>
             <c:choose>

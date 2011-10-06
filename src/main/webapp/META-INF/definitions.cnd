@@ -2,7 +2,7 @@
 <jmix = 'http://www.jahia.org/jahia/mix/1.0'>
 
 [jnt:ifGeoIPCountry] > jnt:contentList, jmix:queryContent
- - j:country (string)
+ - j:country (string, choicelist[country,flag])
  - j:localhostTestAddress (string)
 
 [jnt:ifGeoIPCity] > jnt:contentList, jmix:queryContent
