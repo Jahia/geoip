@@ -1,0 +1,10 @@
+/******************************************************************************
+* personalization box
+******************************************************************************/
+
+.bodywrapper .geoipbox {
+	padding:5px 5px;
+	margin:0 5px ;
+	background-color:#99ccff;
+	border:1px solid #6699cc;
+}

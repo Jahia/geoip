@@ -1,0 +1,10 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+
+[jnt:ifGeoIPCountry] > jnt:contentList, jmix:queryContent
+ - j:country (string)
+ - j:localhostTestAddress (string)
+
+[jnt:ifGeoIPCity] > jnt:contentList, jmix:queryContent
+ - j:city (string)
+ - j:localhostTestAddress (string)
