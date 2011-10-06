@@ -80,7 +80,7 @@
     </c:when>
 
     <c:otherwise>
-        <c:if test="${resolvedLocation.city == cityToMatch}">
+        <c:if test="${resolvedLocation.city == cityToMatch.string}">
             <c:set var="facetParamVarName" value="N-${currentNode.name}"/>
             <%-- list mode --%>
             <c:choose>

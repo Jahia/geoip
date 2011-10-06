@@ -60,7 +60,7 @@
     </c:when>
 
     <c:otherwise>
-        <c:if test="${resolvedCountry.name == countryToMatch}">
+        <c:if test="${resolvedCountry.name == countryToMatch.string}">
             <c:set var="facetParamVarName" value="N-${currentNode.name}"/>
             <%-- list mode --%>
             <c:choose>
