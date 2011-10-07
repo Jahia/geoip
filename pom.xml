@@ -258,7 +258,7 @@
 		                    <Specification-Version>${project.version}</Specification-Version>
 		                    <Specification-Vendor></Specification-Vendor>
                             <package-name>${project.name}</package-name>
-                            <depends>Default Jahia Templates,Jahia Static Assets</depends>
+                            <depends>Default Jahia Templates,Jahia Static Assets,personalization</depends>
                             <definitions>META-INF/definitions.cnd</definitions>
                             <root-folder>${project.artifactId}</root-folder>
                             <module-type>module</module-type>
