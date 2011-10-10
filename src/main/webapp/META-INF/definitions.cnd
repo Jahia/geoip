@@ -1,14 +1,6 @@
 <jnt = 'http://www.jahia.org/jahia/nt/1.0'>
 <jmix = 'http://www.jahia.org/jahia/mix/1.0'>
 
-[jnt:ifGeoIPCountry] > jnt:contentList, jmix:personalizationComponents
- - j:country (string, choicelist[country,flag])
- - j:localhostTestAddress (string)
-
-[jnt:ifGeoIPCity] > jnt:contentList, jmix:personalizationComponents
- - j:city (string)
- - j:localhostTestAddress (string)
-
 [jnt:geoIPCityValueExpression] > jnt:expression, jmix:personalizationComponents
  - j:localhostTestAddress (string)
 
