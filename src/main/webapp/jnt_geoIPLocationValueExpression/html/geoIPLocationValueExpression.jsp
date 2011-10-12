@@ -33,7 +33,7 @@
                 " dma code=" + location.dma_code +
                 " country code=" + location.countryCode +
                 " country name=" + location.countryName);
-        pageContext.setAttribute("resolvedLocation", location);
+        pageContext.setAttribute("resolvedLocation", location.latitude + "," + location.longitude);
     } else {
         RenderContext renderContext = (RenderContext) pageContext.findAttribute("renderContext");
         if (renderContext.isEditMode()) {
@@ -43,4 +43,4 @@
     }
 %>
 <c:set var="jahiaComponentExpression" value="${resolvedLocation.city}" scope="request" />
-<c:if test="${renderContext.editMode}">GeoIP city for remote IP address ${request.remoteAddr} (= ${jahiaComponentExpression})</c:if>
+<c:if test="${renderContext.editMode}">GeoIP location for remote IP address ${request.remoteAddr} (= ${jahiaComponentExpression})</c:if>

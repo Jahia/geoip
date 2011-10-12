@@ -6,3 +6,6 @@
 
 [jnt:geoIPCountryValueExpression] > jnt:expression, jmix:personalizationComponents
  - j:localhostTestAddress (string)
+
+[jnt:geoIPLocationValueExpression] > jnt:expression, jmix:personalizationComponents
+ - j:localhostTestAddress (string)
