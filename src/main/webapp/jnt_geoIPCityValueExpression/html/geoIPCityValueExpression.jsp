@@ -42,5 +42,5 @@
         pageContext.setAttribute("resolvedLocation", null);
     }
 %>
-<c:set var="jahiaComponentExpression" value="${resolvedLocation}" scope="request" />
+<c:set var="jahiaComponentExpression" value="${resolvedLocation.city}" scope="request" />
 <c:if test="${renderContext.editMode}">GeoIP city for remote IP address ${request.remoteAddr} (= ${jahiaComponentExpression})</c:if>
